@@ -13,5 +13,6 @@ Resource          ../Facilities/BaseCustomerFacilities.robot
 CrmDemo
     Open Browser    ${CRM_URL}    ff
     Go To First Corporate Customer
+    Go To First Corporate Customer
 
 *** Keywords ***
