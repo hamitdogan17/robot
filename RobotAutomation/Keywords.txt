@@ -1,0 +1,13 @@
+*** Keywords ***
+Launch Browser
+    Open Browser    ${URL}    ${BROWSER}
+    Maximize Browser Window
+
+Search Application On Google
+    Input Text    id=lst-ib    ${APP}
+    Click Button    name=btnG
+
+Launch Application
+    Wait Until Element Is Visible    link=Hür Ýbrahim Sakman | Free Listening on SoundCloud    20 Seconds
+    Click Element    link=Hür Ýbrahim Sakman | Free Listening on SoundCloud
+    Take Screenshot    Besteler sayfasý

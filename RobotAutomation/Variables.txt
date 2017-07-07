@@ -1,0 +1,4 @@
+*** Variables ***
+${APP}            Hür Ýbrahim Sakman
+${URL}            https://www.google.com
+${BROWSER}        CHROME

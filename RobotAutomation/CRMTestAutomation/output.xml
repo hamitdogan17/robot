@@ -1,0 +1,666 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20161017 10:15:38.315" generator="Robot 3.0 (Python 2.7.10 on darwin)">
+<suite source="/Users/emrahbakirtas/PycharmProjects/jollytour.testautomation/Tests/TestSuites.robot" id="s1" name="TestSuites">
+<test id="s1-t1" name="JollyTour Rezervasyon Yap Test">
+<kw type="setup" name="Launch Browser" library="Keywords">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${LOGIN_URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20161017 10:15:38.426" level="INFO">Opening browser 'chrome' to base url 'http://servicetest.jollytur.com/'</msg>
+<status status="PASS" endtime="20161017 10:15:43.285" starttime="20161017 10:15:38.425"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20161017 10:15:43.585" starttime="20161017 10:15:43.286"></status>
+</kw>
+<status status="PASS" endtime="20161017 10:15:43.586" starttime="20161017 10:15:38.425"></status>
+</kw>
+<kw name="Arama Bilgilerini Gir" library="Keywords">
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>css=.insider-opt-in-notification</arg>
+</arguments>
+<status status="PASS" endtime="20161017 10:15:43.639" starttime="20161017 10:15:43.588"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>css=.insider-opt-in-disallow-button</arg>
+</arguments>
+<msg timestamp="20161017 10:15:43.640" level="INFO">Clicking element 'css=.insider-opt-in-disallow-button'.</msg>
+<status status="PASS" endtime="20161017 10:15:43.703" starttime="20161017 10:15:43.639"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>css=#hotelName</arg>
+<arg>${CITY_NAME}</arg>
+</arguments>
+<msg timestamp="20161017 10:15:43.704" level="INFO">Typing text 'Antalya' into text field 'css=#hotelName'</msg>
+<status status="PASS" endtime="20161017 10:15:43.837" starttime="20161017 10:15:43.704"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3 seconds</arg>
+</arguments>
+<msg timestamp="20161017 10:15:46.838" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" endtime="20161017 10:15:46.839" starttime="20161017 10:15:43.837"></status>
+</kw>
+<kw name="Press Key" library="Selenium2Library">
+<doc>Simulates user pressing key on element identified by `locator`.</doc>
+<arguments>
+<arg>css=#hotelName</arg>
+<arg>\\13</arg>
+</arguments>
+<status status="PASS" endtime="20161017 10:15:46.866" starttime="20161017 10:15:46.839"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>css=#hotelStartDate</arg>
+</arguments>
+<msg timestamp="20161017 10:15:46.866" level="INFO">Clicking element 'css=#hotelStartDate'.</msg>
+<status status="PASS" endtime="20161017 10:15:46.960" starttime="20161017 10:15:46.866"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>css=.ui-state-highlight</arg>
+</arguments>
+<msg timestamp="20161017 10:15:46.960" level="INFO">Clicking element 'css=.ui-state-highlight'.</msg>
+<status status="PASS" endtime="20161017 10:15:47.104" starttime="20161017 10:15:46.960"></status>
+</kw>
+<kw name="Wait Until Element Is Not Visible" library="Selenium2Library">
+<doc>Waits until element specified with `locator` is not visible.</doc>
+<arguments>
+<arg>css=.ui-state-highlight</arg>
+</arguments>
+<status status="PASS" endtime="20161017 10:15:47.122" starttime="20161017 10:15:47.104"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>css=#hotelEndDate</arg>
+</arguments>
+<msg timestamp="20161017 10:15:47.123" level="INFO">Clicking element 'css=#hotelEndDate'.</msg>
+<status status="PASS" endtime="20161017 10:15:47.222" starttime="20161017 10:15:47.123"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>css=.ui-state-active</arg>
+</arguments>
+<msg timestamp="20161017 10:15:47.224" level="INFO">Clicking element 'css=.ui-state-active'.</msg>
+<status status="PASS" endtime="20161017 10:15:47.316" starttime="20161017 10:15:47.223"></status>
+</kw>
+<kw name="Wait Until Element Is Not Visible" library="Selenium2Library">
+<doc>Waits until element specified with `locator` is not visible.</doc>
+<arguments>
+<arg>css=.ui-state-active</arg>
+</arguments>
+<status status="PASS" endtime="20161017 10:15:47.802" starttime="20161017 10:15:47.317"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>css=.childCount</arg>
+</arguments>
+<msg timestamp="20161017 10:15:47.803" level="INFO">Clicking element 'css=.childCount'.</msg>
+<status status="PASS" endtime="20161017 10:15:47.879" starttime="20161017 10:15:47.802"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>css=.childCount option[value='2']</arg>
+</arguments>
+<msg timestamp="20161017 10:15:47.880" level="INFO">Clicking element 'css=.childCount option[value='2']'.</msg>
+<status status="PASS" endtime="20161017 10:15:48.224" starttime="20161017 10:15:47.880"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>css=.childAges</arg>
+</arguments>
+<msg timestamp="20161017 10:15:48.225" level="INFO">Clicking element 'css=.childAges'.</msg>
+<status status="PASS" endtime="20161017 10:15:48.621" starttime="20161017 10:15:48.224"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>css=.childAges option[value='9']</arg>
+</arguments>
+<msg timestamp="20161017 10:15:48.623" level="INFO">Clicking element 'css=.childAges option[value='9']'.</msg>
+<status status="PASS" endtime="20161017 10:15:48.956" starttime="20161017 10:15:48.622"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>css=.childage + .childage</arg>
+</arguments>
+<msg timestamp="20161017 10:15:48.957" level="INFO">Clicking element 'css=.childage + .childage'.</msg>
+<status status="PASS" endtime="20161017 10:15:49.301" starttime="20161017 10:15:48.957"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>css=.childage + .childage .childAges option[value='4']</arg>
+</arguments>
+<msg timestamp="20161017 10:15:49.304" level="INFO">Clicking element 'css=.childage + .childage .childAges option[value='4']'.</msg>
+<status status="PASS" endtime="20161017 10:15:49.674" starttime="20161017 10:15:49.302"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>css=.searchButton</arg>
+</arguments>
+<msg timestamp="20161017 10:15:49.674" level="INFO">Clicking element 'css=.searchButton'.</msg>
+<status status="PASS" endtime="20161017 10:16:01.855" starttime="20161017 10:15:49.674"></status>
+</kw>
+<status status="PASS" endtime="20161017 10:16:01.855" starttime="20161017 10:15:43.587"></status>
+</kw>
+<kw name="Musait Otelleri Goster" library="Keywords">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>css=.productSummary div.checkbox</arg>
+</arguments>
+<msg timestamp="20161017 10:16:01.856" level="INFO">Clicking element 'css=.productSummary div.checkbox'.</msg>
+<status status="PASS" endtime="20161017 10:16:02.044" starttime="20161017 10:16:01.856"></status>
+</kw>
+<kw name="Wait Until Element Is Not Visible" library="Selenium2Library">
+<doc>Waits until element specified with `locator` is not visible.</doc>
+<arguments>
+<arg>css=.fancybox-overlay</arg>
+</arguments>
+<status status="PASS" endtime="20161017 10:16:03.492" starttime="20161017 10:16:02.044"></status>
+</kw>
+<status status="PASS" endtime="20161017 10:16:03.492" starttime="20161017 10:16:01.855"></status>
+</kw>
+<kw name="Odeme Bilgisini Yedekle" library="Keywords">
+<assign>
+<var>${FIRST_PAYMENT_VALUE}</var>
+</assign>
+<kw name="Get Text" library="Selenium2Library">
+<doc>Returns the text value of element identified by `locator`.</doc>
+<arguments>
+<arg>css=.os-fiyat-son</arg>
+</arguments>
+<assign>
+<var>${PAYMENT_VALUE}</var>
+</assign>
+<msg timestamp="20161017 10:16:03.532" level="INFO">${PAYMENT_VALUE} = 333,60TL</msg>
+<status status="PASS" endtime="20161017 10:16:03.532" starttime="20161017 10:16:03.493"></status>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>'${PAYMENT_VALUE}'.replace(',','.')</arg>
+</arguments>
+<assign>
+<var>${PAYMENT_VALUE}</var>
+</assign>
+<msg timestamp="20161017 10:16:03.534" level="INFO">${PAYMENT_VALUE} = 333.60TL</msg>
+<status status="PASS" endtime="20161017 10:16:03.534" starttime="20161017 10:16:03.532"></status>
+</kw>
+<kw name="Return From Keyword" library="BuiltIn">
+<doc>Returns from the enclosing user keyword.</doc>
+<arguments>
+<arg>${PAYMENT_VALUE}</arg>
+</arguments>
+<msg timestamp="20161017 10:16:03.534" level="INFO">Returning from the enclosing user keyword.</msg>
+<status status="PASS" endtime="20161017 10:16:03.534" starttime="20161017 10:16:03.534"></status>
+</kw>
+<msg timestamp="20161017 10:16:03.535" level="INFO">${FIRST_PAYMENT_VALUE} = 333.60TL</msg>
+<status status="PASS" endtime="20161017 10:16:03.535" starttime="20161017 10:16:03.493"></status>
+</kw>
+<kw name="Otel Sec" library="Keywords">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>css=.buton-kucuk</arg>
+</arguments>
+<msg timestamp="20161017 10:16:03.535" level="INFO">Clicking element 'css=.buton-kucuk'.</msg>
+<status status="PASS" endtime="20161017 10:16:03.698" starttime="20161017 10:16:03.535"></status>
+</kw>
+<kw name="Get Window Titles" library="Selenium2Library">
+<doc>Returns and logs titles of all windows known to the browser.</doc>
+<assign>
+<var>@{TITLES}</var>
+</assign>
+<msg timestamp="20161017 10:16:11.057" level="INFO">Altogether 2 items.
+1: Otel Arama - Jollytur Seyahat Platformu
+2: Grand Park Kemer | Antalya | Kemer | Jollytur</msg>
+<msg timestamp="20161017 10:16:11.058" level="INFO">@{TITLES} = [ Otel Arama - Jollytur Seyahat Platformu | Grand Park Kemer | Antalya | Kemer | Jollytur ]</msg>
+<status status="PASS" endtime="20161017 10:16:11.058" starttime="20161017 10:16:03.698"></status>
+</kw>
+<kw name="Select Window" library="Selenium2Library">
+<doc>Selects the window matching locator and return previous window handle.</doc>
+<arguments>
+<arg>${TITLES[1]}</arg>
+</arguments>
+<status status="PASS" endtime="20161017 10:16:11.459" starttime="20161017 10:16:11.058"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>css=.bookingInfo</arg>
+<arg>timeout=15 seconds</arg>
+</arguments>
+<status status="PASS" endtime="20161017 10:16:11.655" starttime="20161017 10:16:11.460"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>css=#notifyContent</arg>
+</arguments>
+<status status="PASS" endtime="20161017 10:16:11.789" starttime="20161017 10:16:11.656"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>css=.sp-inner-notification-close</arg>
+</arguments>
+<msg timestamp="20161017 10:16:11.790" level="INFO">Clicking element 'css=.sp-inner-notification-close'.</msg>
+<status status="PASS" endtime="20161017 10:16:14.003" starttime="20161017 10:16:11.789"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>css=.bookingInfo</arg>
+</arguments>
+<msg timestamp="20161017 10:16:14.004" level="INFO">Clicking element 'css=.bookingInfo'.</msg>
+<status status="PASS" endtime="20161017 10:16:14.051" starttime="20161017 10:16:14.004"></status>
+</kw>
+<status status="PASS" endtime="20161017 10:16:14.052" starttime="20161017 10:16:03.535"></status>
+</kw>
+<kw name="Kisi Bilgilerini Doldur" library="Keywords">
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>css=#name_0_1</arg>
+<arg>timeout=15 seconds</arg>
+</arguments>
+<status status="PASS" endtime="20161017 10:16:45.386" starttime="20161017 10:16:14.052"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>css=#name_0_1</arg>
+<arg>${MAN_NAME}</arg>
+</arguments>
+<msg timestamp="20161017 10:16:45.386" level="INFO">Typing text 'ManName' into text field 'css=#name_0_1'</msg>
+<status status="PASS" endtime="20161017 10:16:45.495" starttime="20161017 10:16:45.386"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>css=#surname_0_1</arg>
+<arg>${SURNAME}</arg>
+</arguments>
+<msg timestamp="20161017 10:16:45.496" level="INFO">Typing text 'Surname' into text field 'css=#surname_0_1'</msg>
+<status status="PASS" endtime="20161017 10:16:45.584" starttime="20161017 10:16:45.495"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>css=#birthdate_0_1</arg>
+<arg>${MAN_BIRTHDAY}</arg>
+</arguments>
+<msg timestamp="20161017 10:16:45.584" level="INFO">Typing text '01011970' into text field 'css=#birthdate_0_1'</msg>
+<status status="PASS" endtime="20161017 10:16:45.691" starttime="20161017 10:16:45.584"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>css=#tcno_0_1</arg>
+<arg>${MAN_TCKN}</arg>
+</arguments>
+<msg timestamp="20161017 10:16:45.692" level="INFO">Typing text '12123212121' into text field 'css=#tcno_0_1'</msg>
+<status status="PASS" endtime="20161017 10:16:45.792" starttime="20161017 10:16:45.691"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>css=#name_0_2</arg>
+<arg>${WOMAN_NAME}</arg>
+</arguments>
+<msg timestamp="20161017 10:16:45.793" level="INFO">Typing text 'WomenName' into text field 'css=#name_0_2'</msg>
+<status status="PASS" endtime="20161017 10:16:45.885" starttime="20161017 10:16:45.792"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>css=#surname_0_2</arg>
+<arg>${SURNAME}</arg>
+</arguments>
+<msg timestamp="20161017 10:16:45.886" level="INFO">Typing text 'Surname' into text field 'css=#surname_0_2'</msg>
+<status status="PASS" endtime="20161017 10:16:45.968" starttime="20161017 10:16:45.885"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>css=#birthdate_0_2</arg>
+<arg>${WOMAN_BIRTHDAY}</arg>
+</arguments>
+<msg timestamp="20161017 10:16:45.969" level="INFO">Typing text '01011970' into text field 'css=#birthdate_0_2'</msg>
+<status status="PASS" endtime="20161017 10:16:46.055" starttime="20161017 10:16:45.968"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>css=#tcno_0_2</arg>
+<arg>${WOMAN_TCKN}</arg>
+</arguments>
+<msg timestamp="20161017 10:16:46.056" level="INFO">Typing text '13132343211' into text field 'css=#tcno_0_2'</msg>
+<status status="PASS" endtime="20161017 10:16:46.153" starttime="20161017 10:16:46.055"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>css=#gender_0_2SelectBoxIt</arg>
+</arguments>
+<msg timestamp="20161017 10:16:46.154" level="INFO">Clicking element 'css=#gender_0_2SelectBoxIt'.</msg>
+<status status="PASS" endtime="20161017 10:16:46.226" starttime="20161017 10:16:46.153"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>css=#gender_0_2SelectBoxItOptions .selectboxit-option-last</arg>
+</arguments>
+<msg timestamp="20161017 10:16:46.227" level="INFO">Clicking element 'css=#gender_0_2SelectBoxItOptions .selectboxit-option-last'.</msg>
+<status status="PASS" endtime="20161017 10:16:46.296" starttime="20161017 10:16:46.226"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>css=#name_0_3</arg>
+<arg>${FIRST_CHILD_NAME}</arg>
+</arguments>
+<msg timestamp="20161017 10:16:46.297" level="INFO">Typing text 'FirstChildName' into text field 'css=#name_0_3'</msg>
+<status status="PASS" endtime="20161017 10:16:46.402" starttime="20161017 10:16:46.296"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>css=#surname_0_3</arg>
+<arg>${SURNAME}</arg>
+</arguments>
+<msg timestamp="20161017 10:16:46.402" level="INFO">Typing text 'Surname' into text field 'css=#surname_0_3'</msg>
+<status status="PASS" endtime="20161017 10:16:46.483" starttime="20161017 10:16:46.402"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>css=#birthdate_0_3</arg>
+<arg>${FIRST_CHILD_BIRTHDAY}</arg>
+</arguments>
+<msg timestamp="20161017 10:16:46.483" level="INFO">Typing text '01012007' into text field 'css=#birthdate_0_3'</msg>
+<status status="PASS" endtime="20161017 10:16:46.570" starttime="20161017 10:16:46.483"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>css=#tcno_0_3</arg>
+<arg>${FIRST_CHILD_TCKN}</arg>
+</arguments>
+<msg timestamp="20161017 10:16:46.570" level="INFO">Typing text '637452612352' into text field 'css=#tcno_0_3'</msg>
+<status status="PASS" endtime="20161017 10:16:46.666" starttime="20161017 10:16:46.570"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>css=#name_0_4</arg>
+<arg>${SECOND_CHILD_NAME}</arg>
+</arguments>
+<msg timestamp="20161017 10:16:46.667" level="INFO">Typing text 'SecondChildName' into text field 'css=#name_0_4'</msg>
+<status status="PASS" endtime="20161017 10:16:46.760" starttime="20161017 10:16:46.666"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>css=#surname_0_4</arg>
+<arg>${SURNAME}</arg>
+</arguments>
+<msg timestamp="20161017 10:16:46.761" level="INFO">Typing text 'Surname' into text field 'css=#surname_0_4'</msg>
+<status status="PASS" endtime="20161017 10:16:46.839" starttime="20161017 10:16:46.761"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>css=#birthdate_0_4</arg>
+<arg>${SECOND_CHILD_BIRTHDAY}</arg>
+</arguments>
+<msg timestamp="20161017 10:16:46.840" level="INFO">Typing text '01012012' into text field 'css=#birthdate_0_4'</msg>
+<status status="PASS" endtime="20161017 10:16:46.927" starttime="20161017 10:16:46.839"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>css=#tcno_0_4</arg>
+<arg>${SECOND_CHILD_TCKN}</arg>
+</arguments>
+<msg timestamp="20161017 10:16:46.928" level="INFO">Typing text '953642716532' into text field 'css=#tcno_0_4'</msg>
+<status status="PASS" endtime="20161017 10:16:47.019" starttime="20161017 10:16:46.928"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>css=#contact_phone</arg>
+<arg>${PHONE}</arg>
+</arguments>
+<msg timestamp="20161017 10:16:47.020" level="INFO">Typing text '2129876543' into text field 'css=#contact_phone'</msg>
+<status status="PASS" endtime="20161017 10:16:47.118" starttime="20161017 10:16:47.019"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>css=#contact_address</arg>
+<arg>${ADRESS}</arg>
+</arguments>
+<msg timestamp="20161017 10:16:47.119" level="INFO">Typing text 'Istanbul' into text field 'css=#contact_address'</msg>
+<status status="PASS" endtime="20161017 10:16:47.203" starttime="20161017 10:16:47.118"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>css=#contact_email</arg>
+<arg>${EMAIL}</arg>
+</arguments>
+<msg timestamp="20161017 10:16:47.204" level="INFO">Typing text 'mail@mail.com' into text field 'css=#contact_email'</msg>
+<status status="PASS" endtime="20161017 10:16:47.315" starttime="20161017 10:16:47.204"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>css=.bookingButton</arg>
+</arguments>
+<msg timestamp="20161017 10:16:47.316" level="INFO">Clicking element 'css=.bookingButton'.</msg>
+<status status="PASS" endtime="20161017 10:16:47.386" starttime="20161017 10:16:47.315"></status>
+</kw>
+<kw name="Wait Until Element Is Not Visible" library="Selenium2Library">
+<doc>Waits until element specified with `locator` is not visible.</doc>
+<arguments>
+<arg>css=.general_loading</arg>
+</arguments>
+<status status="PASS" endtime="20161017 10:16:52.269" starttime="20161017 10:16:47.386"></status>
+</kw>
+<status status="PASS" endtime="20161017 10:16:52.269" starttime="20161017 10:16:14.052"></status>
+</kw>
+<kw name="Fiyat Karsilastir" library="Keywords">
+<arguments>
+<arg>${FIRST_PAYMENT_VALUE}</arg>
+</arguments>
+<kw name="Get Text" library="Selenium2Library">
+<doc>Returns the text value of element identified by `locator`.</doc>
+<arguments>
+<arg>css=.price + .price &gt; span</arg>
+</arguments>
+<assign>
+<var>${CHECK_PAYMENT}</var>
+</assign>
+<msg timestamp="20161017 10:16:52.304" level="INFO">${CHECK_PAYMENT} = 333.60 TL</msg>
+<status status="PASS" endtime="20161017 10:16:52.304" starttime="20161017 10:16:52.270"></status>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>'${CHECK_PAYMENT}'.replace(' ','')</arg>
+</arguments>
+<assign>
+<var>${CHECK_PAYMENT}</var>
+</assign>
+<msg timestamp="20161017 10:16:52.306" level="INFO">${CHECK_PAYMENT} = 333.60TL</msg>
+<status status="PASS" endtime="20161017 10:16:52.306" starttime="20161017 10:16:52.305"></status>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${VALUE}</arg>
+<arg>${CHECK_PAYMENT}</arg>
+</arguments>
+<status status="PASS" endtime="20161017 10:16:52.308" starttime="20161017 10:16:52.306"></status>
+</kw>
+<status status="PASS" endtime="20161017 10:16:52.309" starttime="20161017 10:16:52.270"></status>
+</kw>
+<kw name="Odeme Bilgilerini Doldur" library="Keywords">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>css=.card_namesurname</arg>
+<arg>${MAN_NAME}</arg>
+</arguments>
+<msg timestamp="20161017 10:16:52.312" level="INFO">Typing text 'ManName' into text field 'css=.card_namesurname'</msg>
+<status status="PASS" endtime="20161017 10:16:52.405" starttime="20161017 10:16:52.311"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>css=.cardNumber</arg>
+<arg>${CCNO}</arg>
+</arguments>
+<msg timestamp="20161017 10:16:52.406" level="INFO">Typing text '1234567887654321' into text field 'css=.cardNumber'</msg>
+<status status="PASS" endtime="20161017 10:16:52.506" starttime="20161017 10:16:52.406"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>css=span[name='drp_exdate_month']</arg>
+</arguments>
+<msg timestamp="20161017 10:16:52.506" level="INFO">Clicking element 'css=span[name='drp_exdate_month']'.</msg>
+<status status="PASS" endtime="20161017 10:16:52.622" starttime="20161017 10:16:52.506"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>css=li[data-val='01']</arg>
+</arguments>
+<msg timestamp="20161017 10:16:52.623" level="INFO">Clicking element 'css=li[data-val='01']'.</msg>
+<status status="PASS" endtime="20161017 10:16:52.694" starttime="20161017 10:16:52.623"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>css=span[name='drp_exdate_year']</arg>
+</arguments>
+<msg timestamp="20161017 10:16:52.696" level="INFO">Clicking element 'css=span[name='drp_exdate_year']'.</msg>
+<status status="PASS" endtime="20161017 10:16:52.758" starttime="20161017 10:16:52.695"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>css=li[data-val='19']</arg>
+</arguments>
+<msg timestamp="20161017 10:16:52.758" level="INFO">Clicking element 'css=li[data-val='19']'.</msg>
+<status status="PASS" endtime="20161017 10:16:52.817" starttime="20161017 10:16:52.758"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>css=.secureCode</arg>
+<arg>${CVV}</arg>
+</arguments>
+<msg timestamp="20161017 10:16:52.817" level="INFO">Typing text '123' into text field 'css=.secureCode'</msg>
+<status status="PASS" endtime="20161017 10:16:52.898" starttime="20161017 10:16:52.817"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>css=.icheckbox_square-green</arg>
+</arguments>
+<msg timestamp="20161017 10:16:52.899" level="INFO">Clicking element 'css=.icheckbox_square-green'.</msg>
+<status status="PASS" endtime="20161017 10:16:52.951" starttime="20161017 10:16:52.899"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>css=#ch_rez + .iCheck-helper</arg>
+</arguments>
+<msg timestamp="20161017 10:16:52.952" level="INFO">Clicking element 'css=#ch_rez + .iCheck-helper'.</msg>
+<status status="PASS" endtime="20161017 10:16:53.001" starttime="20161017 10:16:52.952"></status>
+</kw>
+<status status="PASS" endtime="20161017 10:16:53.002" starttime="20161017 10:16:52.310"></status>
+</kw>
+<kw name="Odeme Yap" library="Keywords">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>css=.paymentButton</arg>
+</arguments>
+<msg timestamp="20161017 10:16:53.003" level="INFO">Clicking element 'css=.paymentButton'.</msg>
+<status status="PASS" endtime="20161017 10:16:57.672" starttime="20161017 10:16:53.003"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>css=.fancybox-overlay</arg>
+</arguments>
+<status status="PASS" endtime="20161017 10:16:57.750" starttime="20161017 10:16:57.673"></status>
+</kw>
+<kw name="Get Text" library="Selenium2Library">
+<doc>Returns the text value of element identified by `locator`.</doc>
+<arguments>
+<arg>css=.fancybox-overlay .fancybox-inner</arg>
+</arguments>
+<assign>
+<var>${MESSAGE}</var>
+</assign>
+<msg timestamp="20161017 10:16:57.796" level="INFO">${MESSAGE} = Lütfen Kart Bilgilerini Kontrol Ediniz.</msg>
+<status status="PASS" endtime="20161017 10:16:57.796" starttime="20161017 10:16:57.750"></status>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${MESSAGE}</arg>
+<arg>${WARN_MESSAGE}</arg>
+</arguments>
+<status status="PASS" endtime="20161017 10:16:57.796" starttime="20161017 10:16:57.796"></status>
+</kw>
+<status status="PASS" endtime="20161017 10:16:57.797" starttime="20161017 10:16:53.002"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20161017 10:16:57.965" starttime="20161017 10:16:57.797"></status>
+</kw>
+<status status="PASS" endtime="20161017 10:16:57.965" critical="yes" starttime="20161017 10:15:38.424"></status>
+</test>
+<status status="PASS" endtime="20161017 10:16:57.966" starttime="20161017 10:15:38.318"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="TestSuites" pass="1">TestSuites</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
