@@ -11,8 +11,7 @@ Resource          ../Facilities/BaseCustomerFacilities.robot
 
 *** Test Cases ***
 CrmDemo
-    Open Browser    ${CRM_URL}    ff
-    Go To First Corporate Customer
+    Open Browser    ${CRM_URL}    ${IE_BROWSER}
     Go To First Corporate Customer
 
 *** Keywords ***
