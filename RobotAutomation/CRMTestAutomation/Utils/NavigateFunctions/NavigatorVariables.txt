@@ -7,4 +7,3 @@ ${ServiceToCustomerSearch}    id=etel_customersearch
 ${ServiceToCases}    id=nav_cases
 ${SalesMenuTabButton}    id=SFA
 ${SalesToSubscriptions}    id=etel_subscription
-${Deneme}         id=deneme
