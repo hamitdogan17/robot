@@ -1,8 +1,9 @@
 diff a/RobotAutomation/CRMTestAutomation/Tests/TestSuites.robot b/RobotAutomation/CRMTestAutomation/Tests/TestSuites.robot	(rejected hunks)
-@@ -11,6 +11,7 @@
+@@ -11,7 +11,7 @@
  
  *** Test Cases ***
  CrmDemo
+-    Open Browser    ${CRM_URL}    ${IE_BROWSER}
 +    Open Browser    ${CRM_URL}    ie
      Go To First Corporate Customer
  
