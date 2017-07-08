@@ -28,3 +28,11 @@ GoToSubscriptions
     Wait And Click Element    ${MainLink}
     Wait And Click Element    ${SalesMenuTabButton}
     Wait And Click Element    ${SalesToSubscriptions}
+
+OpenAccountSummaryPage
+    Wait And Click Element    id=formSelectorDropdown
+    Wait And Click Element    ${OpenAccountSummary}
+
+OpenBillingPage
+    Wait And Click Element    id=formSelectorDropdown
+    Wait And Click Element    ${OpenBillingPage}

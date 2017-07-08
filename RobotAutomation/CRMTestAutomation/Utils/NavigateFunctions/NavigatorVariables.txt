@@ -7,3 +7,5 @@ ${ServiceToCustomerSearch}    id=etel_customersearch
 ${ServiceToCases}    id=nav_cases
 ${SalesMenuTabButton}    id=SFA
 ${SalesToSubscriptions}    id=etel_subscription
+${OpenAccountSummary}    xpath=//span[@title='Account Summary']
+${OpenBillingPage}    xpath=//span[@title='Billing']
