@@ -29,4 +29,6 @@ Go to Spesific Corporate Customer
     Wait And Click Element    id=crmGrid_findCriteria
     send text to element    id=crmGrid_findCriteria    ${Customer}
     Press Key    id=crmGrid_findCriteria    \\13
-    Wait And Click Element    xpath=//table[@id='gridBodyTable']/tbody/tr/td[3]/nobr/a
+    Comment    Wait And Click Element    xpath=//table[@id='gridBodyTable']/tbody/tr/td[3]/nobr/a
+    wait for element    xpath=//table[@id='gridBodyTable']/tbody/tr/td[3]/nobr/a
+    Click Element    xpath=//table[@id='gridBodyTable']/tbody/tr/td[3]/nobr/a    skip_ready=${true}

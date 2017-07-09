@@ -18,4 +18,12 @@ CrmDemo
     OpenAccountSummaryPage
     StartBISafetly
 
+Confirm Action Test
+    Open Browser    ${CRM_URL}    ${IE_BROWSER}
+    #Go to Spesific Corporate Customer metodunun içine bak
+    #Anladığım kadarıyla windows popup gelmeden önce tıklatacağın elementin yanına parametre olarak skip_ready=${true} ekliyorsun
+    Go to Spesific Corporate Customer    CS
+    Confirm Action
+    GoToCorporateCustomersList
+
 *** Keywords ***
