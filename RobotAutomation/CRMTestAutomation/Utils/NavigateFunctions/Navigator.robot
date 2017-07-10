@@ -41,3 +41,7 @@ OpenBillingPage
     Wait And Click Element    id=formSelectorDropdown
     Wait And Click Element    ${OpenBillingPage}
     Unselect Frame
+
+Go to CRM
+    Open Browser    ${CRM_URL}    ${IE_BROWSER}
+    Maximize Browser Window
