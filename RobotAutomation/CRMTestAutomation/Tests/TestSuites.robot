@@ -28,4 +28,9 @@ Confirm Action Test
     StartBISafetly
     OpenBillingPage
 
+Alper Deneme
+    Go To First Individual Customer
+    OpenAccountSummaryPage
+    StartBISafetly
+
 *** Keywords ***

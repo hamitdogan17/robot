@@ -31,8 +31,10 @@ GoToSubscriptions
     Wait And Click Element    ${SalesToSubscriptions}
 
 OpenAccountSummaryPage
+    Select IFrame    id=contentIFrame1
     Wait And Click Element    id=header_crmFormSelector
     Wait And Click Element    ${OpenAccountSummary}
+    Unselect Frame
 
 OpenBillingPage
     Select IFrame    id=contentIFrame1
