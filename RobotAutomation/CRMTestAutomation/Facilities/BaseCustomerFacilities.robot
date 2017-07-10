@@ -3,15 +3,20 @@ Resource          ../Utils/NavigateFunctions/Navigator.robot
 Library           ExtendedSelenium2Library
 
 *** Keywords ***
+Select IFrame
+    [Arguments]    ${element}
+    wait for element    ${element}
+    Select Frame    ${element}
+
 Go To First Corporate Customer
     GoToCorporateCustomersList
     Select IFrame    id=contentIFrame0
     Wait And Click Element    xpath=//table[@id='gridBodyTable']/tbody/tr/td[3]/nobr/a
 
-Select IFrame
-    [Arguments]    ${element}
-    wait for element    ${element}
-    Select Frame    ${element}
+Go To First Individual Customer
+    GoToIndividualCustomersList
+    Select IFrame    id=contentIFrame0
+    Wait And Click Element    xpath=//table[@id='gridBodyTable']/tbody/tr/td[3]/nobr/a
 
 Go To Spesific Individual Customer
     [Arguments]    ${Customer}    # Customer name

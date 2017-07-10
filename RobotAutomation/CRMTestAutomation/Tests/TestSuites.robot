@@ -24,9 +24,8 @@ Confirm Action Test
     #Go to Spesific Corporate Customer metodunun içine bak
     #Anladığım kadarıyla windows popup gelmeden önce tıklatacağın elementin yanına parametre olarak skip_ready=${true} ekliyorsun
     Go to Spesific Corporate Customer    CS
-    Confirm Action
-    Select IFrame    id=contentIFrame1
-    Select IFrame    id=WebResource_biheader
+    Comment    Confirm Action
     StartBISafetly
+    OpenBillingPage
 
 *** Keywords ***

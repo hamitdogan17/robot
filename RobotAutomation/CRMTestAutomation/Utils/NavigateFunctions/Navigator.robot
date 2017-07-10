@@ -1,6 +1,7 @@
 *** Settings ***
 Library           ExtendedSelenium2Library
 Resource          ../../Resources/MainFunctions.robot
+Resource          ../../Facilities/BaseCustomerFacilities.robot
 Resource          NavigatorVariables.txt
 
 *** Keywords ***
@@ -34,5 +35,7 @@ OpenAccountSummaryPage
     Wait And Click Element    ${OpenAccountSummary}
 
 OpenBillingPage
+    Select IFrame    id=contentIFrame1
     Wait And Click Element    id=formSelectorDropdown
     Wait And Click Element    ${OpenBillingPage}
+    Unselect Frame
