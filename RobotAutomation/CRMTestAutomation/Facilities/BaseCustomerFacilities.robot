@@ -16,7 +16,7 @@ Go To First Corporate Customer
 Go To First Individual Customer
     GoToIndividualCustomersList
     Select IFrame    id=contentIFrame0
-    Wait And Click Element    xpath=//table[@id='gridBodyTable']/tbody/tr/td[3]/nobr/a
+    Wait And Click Element    xpath=//table[@id='gridBodyTable']/tbody/tr/td[2]/nobr/a
 
 Go To Spesific Individual Customer
     [Arguments]    ${Customer}    # Customer name

@@ -4,7 +4,7 @@ Resource          ../Facilities/BaseCustomerFacilities.robot
 Library           ExtendedSelenium2Library
 
 *** Keywords ***
-StartBISafetly
+StartBISafely
     Select IFrame    id=contentIFrame1
     Select IFrame    id=WebResource_biheader
     Wait And Click Element    id=stop

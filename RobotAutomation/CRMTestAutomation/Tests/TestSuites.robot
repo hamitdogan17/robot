@@ -17,7 +17,7 @@ CrmDemo
     Go to Spesific Corporate Customer    CS
     Comment    Press Key    \    \\13
     OpenAccountSummaryPage
-    StartBISafetly
+    StartBISafely
 
 Confirm Action Test
     Go to CRM
@@ -25,13 +25,16 @@ Confirm Action Test
     #Anladığım kadarıyla windows popup gelmeden önce tıklatacağın elementin yanına parametre olarak skip_ready=${true} ekliyorsun
     Go to Spesific Corporate Customer    CS
     Comment    Confirm Action
-    StartBISafetly
-    OpenBillingPage
+    StartBISafely
+    OpenBillingAndPayment
 
 Alper Deneme
     Go to CRM
     Go To First Individual Customer
     OpenAccountSummaryPage
-    StartBISafetly
+    OpenMonetaryTransactionsPage
+    OpenBillingAndPaymentPage
+    OpenCustomer360Page
+    OpenIndividualCustomerViewPage
 
 *** Keywords ***

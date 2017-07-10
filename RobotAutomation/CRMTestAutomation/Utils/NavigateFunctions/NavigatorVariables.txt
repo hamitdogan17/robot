@@ -8,4 +8,11 @@ ${ServiceToCases}    id=nav_cases
 ${SalesMenuTabButton}    id=SFA
 ${SalesToSubscriptions}    id=etel_subscription
 ${OpenAccountSummary}    xpath=//span[@title='Account Summary']
-${OpenBillingPage}    xpath=//span[@title='Billing']
+${OpenBillingAndPayment}    xpath=//span[@title='Billing&Payment Data']
+${OpenIndividualCustomer}    xpath=//span[@title='Individual Customer']
+${OpenCustomerData}    xpath=//span[@title='Customer Data']
+${OpenMonetaryTransactions}    xpath=//span[@title='Monetary Transactions']
+${OpenCustomer360}    xpath=//span[@title='Customer 360']
+${OpenCustomer360BlackList}    xpath=//span[@title='Customer 360 - BlackList']
+${OpenCorporateCustomerView}    xpath=//span[@title='Corporate Customer']
+${OpenBillingForCorporate}    xpath=//span[@title='Billing']
