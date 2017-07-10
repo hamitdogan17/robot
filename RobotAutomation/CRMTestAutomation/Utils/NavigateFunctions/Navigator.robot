@@ -30,7 +30,7 @@ GoToSubscriptions
     Wait And Click Element    ${SalesToSubscriptions}
 
 OpenAccountSummaryPage
-    Wait And Click Element    id=formSelectorDropdown
+    Wait And Click Element    id=header_crmFormSelector
     Wait And Click Element    ${OpenAccountSummary}
 
 OpenBillingPage
