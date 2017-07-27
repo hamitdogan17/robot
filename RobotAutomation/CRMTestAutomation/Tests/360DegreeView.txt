@@ -1,0 +1,21 @@
+*** Settings ***
+Resource          ../Resources/MainFunctions.robot
+Resource          ../Resources/Variables.robot
+Library           ExtendedSelenium2Library
+Library           Collections
+Library           RequestsLibrary
+Library           Process
+Resource          ../Facilities/BaseCustomerFacilities.robot
+Resource          ../Facilities/CustomerFacilities.robot
+Resource          ../Utils/NavigateFunctions/Navigator.robot
+
+*** Test Cases ***
+CorporateCustomer360Degree
+    Go to CRM
+    Go to Spesific Corporate Customer    cs
+    OpenCustomer360Page
+
+IndividualCustomer360Degree
+    Go to CRM
+    Go To Spesific Individual Customer    cs
+    OpenCustomer360Page
