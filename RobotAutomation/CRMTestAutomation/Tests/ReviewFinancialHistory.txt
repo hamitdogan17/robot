@@ -1,0 +1,25 @@
+*** Settings ***
+Resource          ../Resources/MainFunctions.robot
+Resource          ../Resources/Variables.robot
+Library           ExtendedSelenium2Library
+Library           Collections
+Library           RequestsLibrary
+Library           Process
+Resource          ../Facilities/BaseCustomerFacilities.robot
+Resource          ../Facilities/CustomerFacilities.robot
+Resource          ../Utils/NavigateFunctions/Navigator.robot
+
+*** Test Cases ***
+OpeningReviewFinancialHistoryForCorp
+    Go to CRM
+    Go to Spesific Corporate Customer    soner corp
+    OpenAccountSummaryPage
+    StartBISafely
+    GoToSubsDetailForSelectedCorp
+
+OpeningReviewFinancialHistoryForIndv
+    Go to CRM
+    Go To Spesific Individual Customer    flat customer2
+    OpenAccountSummaryPage
+    StartBISafely
+    GoToSubsDetailForSelectedCorp

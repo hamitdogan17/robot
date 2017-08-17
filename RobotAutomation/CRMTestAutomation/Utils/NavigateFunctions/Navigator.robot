@@ -87,3 +87,15 @@ OpenCustomer360BlacklistPage
     Wait And Click Element    id=header_crmFormSelector
     Wait And Click Element    ${OpenCustomer360BlackList}
     Unselect Frame
+
+OpenAccountHistory
+    [Arguments]    ${type}
+    Run keyword if    '${type}'=='corporate'    Wait And Click Element    ${OpenAccountHistoryButtonCorp}
+    Run keyword if    '${type}'=='individual'    Wait And Click Element    ${OpenAccountHistoryButtonIndv}
+
+OpenAccHistoryFromSubsPage
+    ClickMoreCommand
+    Wait And Click Element    ${OpenAccountHistoryButtonSubs}
+
+ClickMoreCommand
+    Wait And Click Element    id=moreCommands

@@ -16,3 +16,6 @@ ${OpenCustomer360}    xpath=//span[@title='Customer 360']
 ${OpenCustomer360BlackList}    xpath=//span[@title='Customer 360 - BlackList']
 ${OpenCorporateCustomerView}    xpath=//span[@title='Corporate Customer']
 ${OpenBillingForCorporate}    xpath=//span[@title='Billing']
+${OpenAccountHistoryButtonCorp}    id=account|NoRelationship|Form|jwl.account.AccountHistory.Button
+${OpenAccountHistoryButtonIndv}    id=contact|NoRelationship|Form|jwl.contact.AccountHistory.Button
+${OpenAccountHistoryButtonSubs}    id=etel_subscription|NoRelationship|Form|jwl.etel_subscription.AccountHistory.Button
