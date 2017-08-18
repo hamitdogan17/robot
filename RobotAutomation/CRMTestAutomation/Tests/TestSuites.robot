@@ -28,9 +28,4 @@ Confirm Action Test
     StartBISafely
     OpenBillingAndPayment
 
-Alper Deneme
-    Go to CRM
-    Go To First Individual Customer
-    OpenAccountSummaryPage
-
 *** Keywords ***

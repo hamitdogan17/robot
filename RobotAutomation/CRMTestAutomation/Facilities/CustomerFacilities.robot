@@ -25,10 +25,21 @@ SelectSubsInCorpCustPage
     Unselect Frame
 
 GoToSubsDetailForSelectedIndv
+    Select IFrame    id=contentIFrame1
+    Scroll Element Into View    id=Subscription_divDataArea
     Wait And Click Element    xpath=//div[@id='Subscription_divDataArea']/div/table/tbody/tr/td[2]/nobr/a
+    Unselect Frame
 
 GoToSubsDetailForSelectedCorp
     Select IFrame    id=contentIFrame1
     Scroll Element Into View    id=Subscription_divDataArea
     Wait And Click Element    xpath=//div[@id='Subscription_divDataArea']/div/table/tbody/tr[4]/td[2]/nobr/a
+    Unselect Frame
+
+ChangeLanguage
+    Sleep    10s
+    Select IFrame    id=contentIFrame1
+    Wait And Click Element    id=etel_languagecode
+    Wait And Click Element    xpath=//select[@id='etel_languagecode_i']/option[3]
+    Wait And Click Element    id=savefooter_statuscontrol
     Unselect Frame

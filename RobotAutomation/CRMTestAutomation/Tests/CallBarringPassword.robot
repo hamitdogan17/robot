@@ -8,18 +8,12 @@ Library           Process
 Resource          ../Facilities/BaseCustomerFacilities.robot
 Resource          ../Facilities/CustomerFacilities.robot
 Resource          ../Utils/NavigateFunctions/Navigator.robot
+Resource          ../Facilities/CallBarringPassword.robot
 
 *** Test Cases ***
-554-OpeningReviewFinancialHistoryForCorp
-    Go to CRM
-    Go to Spesific Corporate Customer    soner corp
-    OpenAccountSummaryPage
-    StartBISafely
-    GoToSubsDetailForSelectedCorp
-
-555-OpeningReviewFinancialHistoryForIndv
+569-ResetCallBarringPasswordFromSubscriptionPanel !!!! popup buraya
     Go to CRM
     Go To Spesific Individual Customer    flat customer2
     OpenAccountSummaryPage
-    StartBISafely
-    GoToSubsDetailForSelectedCorp
+    GoToSubsDetailForSelectedIndv
+    CallBarringPassword.ClickResetCallBarringPassword

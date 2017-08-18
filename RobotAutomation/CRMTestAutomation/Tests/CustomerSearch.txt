@@ -8,10 +8,19 @@ Library           Process
 Resource          ../Facilities/BaseCustomerFacilities.robot
 Resource          ../Facilities/CustomerFacilities.robot
 Resource          ../Utils/NavigateFunctions/Navigator.robot
+Resource          ../Facilities/CustomerSearch.robot
 
 *** Test Cases ***
-CustomerSearchScreenElements
+75-CustomerSearchScreenElements
     Go to CRM
-    Comment    Go To Spesific Individual Customer    cs
+    GoToCustomerSearch
+    ClickLookForSelectField
+    CheckSelectFieldOptions
+
+70-CustomerSearchInput
+    Go to CRM
+    GoToCustomerSearch
+    ClickLookForSelectField
+    CheckSelectFieldOptions
+    SendIndvFirstNameAndSearch
     Comment    OpenAccountSummaryPage
-    Go To Subscription With Status    individual    a

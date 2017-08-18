@@ -11,7 +11,7 @@ Resource          ../Utils/NavigateFunctions/Navigator.robot
 Resource          ../Facilities/AccountHistoryFacilities.robot
 
 *** Test Cases ***
-OpeningAccountHistoryCorp
+556-OpeningAccountHistoryCorp
     Go to CRM
     Go to Spesific Corporate Customer    soner corp
     OpenAccountSummaryPage
@@ -19,7 +19,7 @@ OpeningAccountHistoryCorp
     SelectSubsInCorpCustPage
     OpenAccountHistory    corporate
 
-OpeningAccountHistoryIndv
+557-OpeningAccountHistoryIndv
     Go to CRM
     Go To Spesific Individual Customer    flat customer2
     OpenAccountSummaryPage
@@ -27,7 +27,7 @@ OpeningAccountHistoryIndv
     SelectSubsInCorpCustPage
     OpenAccountHistory    individual
 
-AccountHistoryScreenGetTransactionCorp
+276-AccountHistoryScreenGetTransactionCorp
     Go to CRM
     Go to Spesific Corporate Customer    soner corp
     OpenAccountSummaryPage
@@ -35,7 +35,7 @@ AccountHistoryScreenGetTransactionCorp
     GoToSubsDetailForSelectedCorp
     OpenAccHistoryFromSubsPage
 
-AccountHistoryScreenNameSelectionCorp
+275-AccountHistoryScreenNameSelectionCorp
     Go to CRM
     Go to Spesific Corporate Customer    soner corp
     OpenAccountSummaryPage
@@ -44,11 +44,11 @@ AccountHistoryScreenNameSelectionCorp
     OpenAccHistoryFromSubsPage
     ClickAndSelectSectionNameDropdownlist
 
-AccountHistoryScreenGetTransactionIndv
+252-AccountHistoryOpenIndv
     Go to CRM
     Go To Spesific Individual Customer    flat customer2
     OpenAccountSummaryPage
     StartBISafely
-    GoToSubsDetailForSelectedCorp
+    GoToSubsDetailForSelectedIndv
     OpenAccHistoryFromSubsPage
     ClickSectionNameDropdownlist

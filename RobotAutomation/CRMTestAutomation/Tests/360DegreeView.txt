@@ -10,12 +10,12 @@ Resource          ../Facilities/CustomerFacilities.robot
 Resource          ../Utils/NavigateFunctions/Navigator.robot
 
 *** Test Cases ***
-CorporateCustomer360Degree
+547-CorporateCustomer360Degree
     Go to CRM
-    Go to Spesific Corporate Customer    cs
+    Go to Spesific Corporate Customer    soner corp
     OpenCustomer360Page
 
-IndividualCustomer360Degree
+548-IndividualCustomer360Degree
     Go to CRM
-    Go To Spesific Individual Customer    cs
+    Go To Spesific Individual Customer    flat customer2
     OpenCustomer360Page
