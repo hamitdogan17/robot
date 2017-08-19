@@ -43,3 +43,10 @@ ChangeLanguage
     Wait And Click Element    xpath=//select[@id='etel_languagecode_i']/option[3]
     Wait And Click Element    id=savefooter_statuscontrol
     Unselect Frame
+
+ClickStartBI
+    Select IFrame    id=contentIFrame1
+    Select IFrame    id=WebResource_biheader
+    Wait And Click Element    id=start
+    Unselect Frame
+    Unselect Frame

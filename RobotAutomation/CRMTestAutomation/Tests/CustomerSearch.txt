@@ -22,5 +22,22 @@ Resource          ../Facilities/CustomerSearch.robot
     GoToCustomerSearch
     ClickLookForSelectField
     CheckSelectFieldOptions
-    SendIndvFirstNameAndSearch
+    SendIndvFirstNameAndSearch    flat
     Comment    OpenAccountSummaryPage
+
+69-CustomerSearchSelectRecord
+    Go to CRM
+    GoToCustomerSearch
+    ClickLookForSelectField
+    CheckSelectFieldOptions
+    SendIndvFirstNameAndSearch    *
+    Comment    OpenAccountSummaryPage
+
+82-CustomerSearchLogging
+    Go to CRM
+    GoToCustomerSearch
+    ClickLookForSelectField
+    CheckSelectFieldOptions
+    SendIndvFirstNameAndSearch    flat
+    OpenAccountSummaryPage
+    ClickStartBI

@@ -15,8 +15,9 @@ CheckSelectFieldOptions
     Unselect Frame
 
 SendIndvFirstNameAndSearch
+    [Arguments]    ${name}    # searchName
     Select IFrame    id=contentIFrame0
     Wait And Click Element    id=SearchText
-    send text to element    id=SearchText    flat
+    send text to element    id=SearchText    ${name}
     Wait And Click Element    xpath=//a[@onclick=' doSimpleSearch() ']
     Unselect Frame
