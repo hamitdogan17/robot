@@ -8,4 +8,4 @@ ClickResetCallBarringPassword
     ClickMoreCommand
     Wait And Click Element    id=etel_subscription|NoRelationship|Form|jwl.etel_subscription.ResetCallBarring.Button
     Sleep    5s
-    Comment    Press Key    id=    \\13
+    send text to element    id=    \\13

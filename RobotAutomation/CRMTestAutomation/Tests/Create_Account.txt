@@ -9,10 +9,19 @@ Resource          ../Facilities/BaseCustomerFacilities.robot
 Resource          ../Facilities/CustomerFacilities.robot
 Resource          ../Utils/NavigateFunctions/Navigator.robot
 Resource          ../Facilities/CallBarringPassword.robot
+Resource          ../Facilities/CustomerCreate.robot
 
 *** Test Cases ***
-!!!! 617-UpdateCorporate
+240-IndividualCustomerForm
     Go to CRM
-    Go to Spesific Corporate Customer    soner corp
-    OpenCorporateCustomerViewPage
-    ChangeLanguage
+    GoToIndividualCustomersList
+    ClickNewIndividual
+    OpenCustomerDataPage
+    CreateIndividualForm
+
+241-CorporateCustome Form
+    Go to CRM
+    GoToCorporateCustomersList
+    ClickNewCorporate
+    OpenCustomerDataPage
+    CreateCorporateForm

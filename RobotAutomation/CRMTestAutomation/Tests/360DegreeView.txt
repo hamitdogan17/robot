@@ -19,3 +19,8 @@ Resource          ../Utils/NavigateFunctions/Navigator.robot
     Go to CRM
     Go To Spesific Individual Customer    flat customer2
     OpenCustomer360Page
+
+398-360degreeview
+    Go to CRM
+    Go to Spesific Corporate Customer    soner corp
+    OpenCustomer360Page
