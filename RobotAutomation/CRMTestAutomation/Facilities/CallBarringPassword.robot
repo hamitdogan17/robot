@@ -7,5 +7,3 @@ Library           ExtendedSelenium2Library
 ClickResetCallBarringPassword
     ClickMoreCommand
     Wait And Click Element    id=etel_subscription|NoRelationship|Form|jwl.etel_subscription.ResetCallBarring.Button
-    Sleep    5s
-    send text to element    id=    \\13

@@ -11,12 +11,14 @@ Resource          ../Utils/NavigateFunctions/Navigator.robot
 Resource          ../Facilities/CallBarringPassword.robot
 
 *** Test Cases ***
-!!!! 569-ResetCallBarringPasswordFromSubscriptionPanel
+569-ResetCallBarringPasswordFromSubscriptionPanel
     Go to CRM
     Go To Spesific Individual Customer    flat customer2
     OpenAccountSummaryPage
     GoToSubsDetailForSelectedIndv
     CallBarringPassword.ClickResetCallBarringPassword
+    Sleep    5s
+    Confirm Action
 
 513-ResetCallBarringPasswordButton
     Go to CRM
@@ -26,9 +28,13 @@ Resource          ../Facilities/CallBarringPassword.robot
     ClickMoreCommand
     Wait And Click Element    id=etel_subscription|NoRelationship|Form|jwl.etel_subscription.ResetCallBarring.Button
 
-!!!! 101-ResetCallBarringBugFixCheck
+101-ResetCallBarringBugFixCheck
     Go to CRM
     Go to Spesific Corporate Customer    soner corp
     OpenAccountSummaryPage
     GoToSubsDetailForSelectedCorp
     CallBarringPassword.ClickResetCallBarringPassword
+    Sleep    5s
+    Confirm Action
+    Comment    Sleep    10s
+    Comment    Should Be Equal    Error Happened: JBoss Error Message: Server Interval Error    Confirm Action

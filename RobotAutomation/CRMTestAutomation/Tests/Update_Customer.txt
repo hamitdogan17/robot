@@ -16,3 +16,9 @@ Resource          ../Facilities/CallBarringPassword.robot
     Go to Spesific Corporate Customer    soner corp
     OpenCorporateCustomerViewPage
     ChangeLanguage
+
+!!!! 616-UpdateIndividual
+    Go to CRM
+    Go To Spesific Individual Customer    flat customer 2
+    OpenIndividualCustomerViewPage
+    ChangeLanguage

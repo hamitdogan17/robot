@@ -21,7 +21,7 @@ CreateIndividualForm
     Wait And Click Element    xpath=//select[@id='etel_customeraddresstypecode_i']/option[2]
     Wait And Click Element    id=address1_line1
     send text to element    id=address1_line1_i    Address1
-    Wait And Click Element    id=savefooter_statuscontrol
+    Comment    Wait And Click Element    id=savefooter_statuscontrol
     Unselect Frame
 
 ClickNewCorporate
@@ -31,5 +31,5 @@ CreateCorporateForm
     Select IFrame    id=contentIFrame1
     Wait And Click Element    id=name
     send text to element    id=name_i    Robot Test
-    Wait And Click Element    id=savefooter_statuscontrol
+    Comment    Wait And Click Element    id=savefooter_statuscontrol
     Unselect Frame
