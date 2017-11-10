@@ -20,8 +20,10 @@ SelectSubsInIndvCustPage
 
 SelectSubsInCorpCustPage
     Select IFrame    id=contentIFrame1
-    Scroll Element Into View    id=Subscription_divDataArea
-    Wait And Click Element    xpath=//div[@id='Subscription_divDataArea']/div/table/tbody/tr[4]/td[4]/div
+    Comment    Scroll Element Into View    id=Subscription_divDataArea
+    Scroll Element Into View    id=subscriptions_header_h2
+    Wait And Click Element    id=subscriptions_header_h2
+    Wait And Click Element    xpath=//div[@id='Subscription_divDataArea']/div/table/tbody/tr/td[2]
     Unselect Frame
 
 GoToSubsDetailForSelectedIndv

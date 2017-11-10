@@ -8,6 +8,9 @@ Resource          NavigatorVariables.txt
 Go to CRM
     Open Browser    ${CRM_URL}    ${IE_BROWSER}
     Maximize Browser Window
+    Select IFrame    id=InlineDialog_Iframe
+    Wait And Click Element    id=buttonClose
+    Unselect Frame
 
 GoToCustomerSearch
     Wait And Click Element    ${MainLink}
@@ -90,8 +93,12 @@ OpenCustomer360BlacklistPage
 
 OpenAccountHistory
     [Arguments]    ${type}
-    Run keyword if    '${type}'=='corporate'    Wait And Click Element    ${OpenAccountHistoryButtonCorp}
-    Run keyword if    '${type}'=='individual'    Wait And Click Element    ${OpenAccountHistoryButtonIndv}
+    Comment    Run keyword if    '${type}'=='corporate'    Wait And Click Element    ${OpenAccountHistoryButtonCorp}
+    Comment    Run keyword if    '${type}'=='individual'    Wait And Click Element    ${OpenAccountHistoryButtonIndv}
+    Wait And Click Element    id=etel_subscription|NoRelationship|Form|jwl.etel_subscription.Actions.Button
+    Wait And Click Element    id=etel_subscription|NoRelationship|Form|jwl.etel_subscription.BI.Button
+    Comment    Select IFrame    id=contentIFrame1
+    Wait And Click Element    id=etel_subscription|NoRelationship|Form|jwl.etel_subscription.AccountHistory.Button
 
 OpenAccHistoryFromSubsPage
     ClickMoreCommand
@@ -99,3 +106,15 @@ OpenAccHistoryFromSubsPage
 
 ClickMoreCommand
     Wait And Click Element    id=moreCommands
+
+OpenAccountHistoryCorp
+    Wait And Click Element    id=account|NoRelationship|Form|jwl.account.Actions.Button
+    Wait And Click Element    id=account|NoRelationship|Form|jwl.account.BI.Button
+    Comment    Select IFrame    id=contentIFrame1
+    Wait And Click Element    id=account|NoRelationship|Form|jwl.account.AccountHistory.Button
+
+OpenAccountHistoryIndv
+    Wait And Click Element    id=contact|NoRelationship|Form|jwl.contact.Actions.Button
+    Wait And Click Element    id=contact|NoRelationship|Form|jwl.contact.BI.Button
+    Comment    Select IFrame    id=contentIFrame1
+    Wait And Click Element    id=contact|NoRelationship|Form|jwl.contact.AccountHistory.Button

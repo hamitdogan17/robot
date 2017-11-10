@@ -3,7 +3,6 @@ Resource          ../Resources/MainFunctions.robot
 Resource          ../Resources/Variables.robot
 Library           ExtendedSelenium2Library
 Library           Collections
-Library           RequestsLibrary
 Library           Process
 Resource          ../Facilities/BaseCustomerFacilities.robot
 Resource          ../Facilities/CustomerFacilities.robot
@@ -13,42 +12,34 @@ Resource          ../Facilities/AccountHistoryFacilities.robot
 *** Test Cases ***
 556-OpeningAccountHistoryCorp
     Go to CRM
-    Go to Spesific Corporate Customer    soner corp
-    OpenAccountSummaryPage
-    StartBISafely
+    Go to Spesific Corporate Customer    Soner corp
     SelectSubsInCorpCustPage
-    OpenAccountHistory    corporate
+    OpenAccountHistoryCorp
 
 557-OpeningAccountHistoryIndv
     Go to CRM
-    Go To Spesific Individual Customer    flat customer2
-    OpenAccountSummaryPage
-    StartBISafely
+    Go To Spesific Individual Customer    Aleyna Tilki
     SelectSubsInCorpCustPage
-    OpenAccountHistory    individual
+    OpenAccountHistoryIndv
 
 276-AccountHistoryScreenGetTransactionCorp
     Go to CRM
-    Go to Spesific Corporate Customer    soner corp
-    OpenAccountSummaryPage
-    StartBISafely
+    Go to Spesific Corporate Customer    Soner corp
     GoToSubsDetailForSelectedCorp
-    OpenAccHistoryFromSubsPage
+    OpenAccountHistory    corporate
 
 275-AccountHistoryScreenNameSelectionCorp
     Go to CRM
-    Go to Spesific Corporate Customer    soner corp
-    OpenAccountSummaryPage
-    StartBISafely
+    Go to Spesific Corporate Customer    Soner corp
     GoToSubsDetailForSelectedCorp
-    OpenAccHistoryFromSubsPage
+    Comment    OpenAccHistoryFromSubsPage
+    OpenAccountHistory    corporate
     ClickAndSelectSectionNameDropdownlist
 
 252-AccountHistoryOpenIndv
     Go to CRM
-    Go To Spesific Individual Customer    flat customer2
-    OpenAccountSummaryPage
-    StartBISafely
+    Go To Spesific Individual Customer    Aleyna Tilki
     GoToSubsDetailForSelectedIndv
-    OpenAccHistoryFromSubsPage
+    Comment    OpenAccHistoryFromSubsPage
+    OpenAccountHistory    individual
     ClickSectionNameDropdownlist

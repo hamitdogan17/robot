@@ -36,7 +36,7 @@ Go to Spesific Corporate Customer
     Press Key    id=crmGrid_findCriteria    \\13
     Comment    Wait And Click Element    xpath=//table[@id='gridBodyTable']/tbody/tr/td[3]/nobr/a
     wait for element    xpath=//table[@id='gridBodyTable']/tbody/tr/td[3]/nobr/a
-    Click Element    xpath=//table[@id='gridBodyTable']/tbody/tr/td[3]/nobr/a    skip_ready=${true}
+    \    Click Element    xpath=//table[@id='gridBodyTable']/tbody/tr/td[3]/nobr/a    skip_ready=${true}
 
 Go To Subscription With Status
     [Arguments]    ${customerType}    ${status}

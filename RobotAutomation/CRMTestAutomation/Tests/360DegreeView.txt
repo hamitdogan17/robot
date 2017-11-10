@@ -3,7 +3,6 @@ Resource          ../Resources/MainFunctions.robot
 Resource          ../Resources/Variables.robot
 Library           ExtendedSelenium2Library
 Library           Collections
-Library           RequestsLibrary
 Library           Process
 Resource          ../Facilities/BaseCustomerFacilities.robot
 Resource          ../Facilities/CustomerFacilities.robot
